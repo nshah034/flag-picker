@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Result = (props) => {
   const { flags, handleButtonClick, removeCountry } = props
   return (
-    <div className="result">
+    <div className="Result">
       <h2>Selected Flags:</h2>
       <div>
       {
@@ -15,7 +15,12 @@ const Result = (props) => {
               key={country.name}
               className="flag"
               >
-                <span onClick = {() => {removeCountry(index)} } className="close">X</span>
+                <span
+                  onClick = {() => {removeCountry(index)} }
+                  className="close"
+                >
+                  X
+                </span>
                 {country.flag}
               </div>
           )

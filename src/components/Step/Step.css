@@ -1,15 +1,15 @@
-.step {
+.Step {
   width: 30%;
   text-align: center;
   margin-left: 20px;
   float:left;
 }
-.step .selection-text {
+.Step .selection-text {
   margin-top: 20px;
 }
 
 @media screen and (max-width: 650px) {
-  .step {
+  .Step {
     width: 90%;
   }
 }

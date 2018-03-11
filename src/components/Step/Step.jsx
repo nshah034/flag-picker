@@ -6,9 +6,9 @@ import './Step.css'
 const Step = (props) => {
   const { heading, tagline, handleFocus, createOptions, selectedValue, handleKeyUp } = props
   return (
-    <div className="step">
-      <h2>{heading}</h2>
-      <p>{tagline}</p>
+    <div className="Step">
+      <h2> {heading} </h2>
+      <p> {tagline} </p>
       <SearchBox
         handleFocus={handleFocus}
         handleKeyUp={handleKeyUp}
@@ -16,11 +16,12 @@ const Step = (props) => {
         {(value) => createOptions(value) }
       </SearchBox>
       {  selectedValue ?
-      <div className="selection-text">
-        <p>You selected</p>
-        <h2>{ selectedValue.continent }</h2>
-      </div>
-      :null
+        <div className="selection-text">
+          <p>You selected</p>
+          <h2>{ selectedValue.continent }</h2>
+        </div>
+        :
+        null
       }
     </div>
   )
