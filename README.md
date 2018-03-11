@@ -1,5 +1,5 @@
 # flag-picker
-This is a Flag Picker
+This is a Flag Picker Application: 
 
 Components:
 1) Options: Component for DropDown
