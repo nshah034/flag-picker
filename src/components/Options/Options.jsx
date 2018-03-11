@@ -53,7 +53,7 @@ handleClickOutside = (e) => {
                   ${this.isSelected(opt[property]) ? 'selected': ''}`
                 }
                 >
-                  { opt[property] }
+                  {opt.flag || ''} { opt[property] }
                 </li>
             )
           })

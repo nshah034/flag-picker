@@ -153,6 +153,16 @@ class App extends Component {
       hoveredCountry: -1
     })
   }
+  removeCountry = (index) => {
+    this.setState(({countries}) => {
+      return {
+        countries: [
+          ...countries.slice(0, index),
+          ...countries.slice(index + 1)
+        ]
+      }
+    })
+  }
 
   render() {
     const { continent } = this.state
@@ -165,7 +175,7 @@ class App extends Component {
         <Step
           heading={'Step 1'}
           tagline= {'Select a continent'}
-          handleFocus={() => this.setState({isOpen: true})}
+          handleFocus={() => this.setState({isOpen: true, isCountryOpen:false })}
           createOptions={this.createContinentDropdown}
           selectedValue={ this.state.continent }
           handleKeyUp={this.browseContinents}
@@ -185,6 +195,7 @@ class App extends Component {
         <Result
           flags={this.state.countries}
           handleButtonClick={this.clearFlags}
+          removeCountry={this.removeCountry}
         />
         :null
       }
