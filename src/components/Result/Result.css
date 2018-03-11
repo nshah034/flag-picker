@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .result {
+  .Result {
     width: 90%;
   }
 }
