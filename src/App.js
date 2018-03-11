@@ -20,7 +20,6 @@ class App extends Component {
    this.setState({ countries: [] })
  }
 
-
   handleContinentSelect = (continent) => {
     if(typeof continent === "number" ) {
       continent = this.state.dropDownOptions[continent]
@@ -161,7 +160,7 @@ class App extends Component {
       <div className="App">
         <div>
           <h2>FLAG PICKER</h2>
-          <p>This app will help you to learn flags around the world in <u>3 steps</u></p>
+          <p>This app will help you to learn flags around the world in <span className="underline">3 steps</span></p>
         </div>
         <Step
           heading={'Step 1'}
@@ -183,15 +182,13 @@ class App extends Component {
       }
       {
         this.state.countries &&  this.state.countries.length > 0 ?
-      <div className="step">
         <Result
           flags={this.state.countries}
           handleButtonClick={this.clearFlags}
         />
+        :null
+      }
     </div>
-    :null
-  }
-</div>
     );
   }
 }

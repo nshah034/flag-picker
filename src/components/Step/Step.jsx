@@ -17,8 +17,8 @@ const Step = (props) => {
       </SearchBox>
       {  selectedValue ?
       <div className="selection-text">
-        You selected
-        <h2>{selectedValue.continent}</h2>
+        <p>You selected</p>
+        <h2>{ selectedValue.continent }</h2>
       </div>
       :null
       }

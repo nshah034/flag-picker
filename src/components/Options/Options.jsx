@@ -1,7 +1,16 @@
 import React from 'react'
 import './Options.css'
+import PropTypes from 'prop-types'
 
 export default class Options extends React.Component {
+  static propTypes = {
+    options: PropTypes.array.isRequired,
+    handleSelect: PropTypes.func.isRequired,
+    property: PropTypes.string.isRequired,
+    current: PropTypes.number.isRequired,
+    handleClickOutside: PropTypes.func.isRequired,
+    selected: PropTypes.array
+  }
   componentDidMount () {
     document.addEventListener('mousedown', this.handleClickOutside);
   }

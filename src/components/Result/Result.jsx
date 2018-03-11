@@ -1,5 +1,6 @@
 import React from 'react'
 import './Result.css'
+import PropTypes from 'prop-types'
 
 const Result = (props) => {
   const { flags, handleButtonClick } = props
@@ -8,13 +9,13 @@ const Result = (props) => {
       <p>Selected Flags:</p>
       <div>
       {
-        flags.map((flag) => {
+        flags.map((country) => {
           return (
             <div
-              key={flag.name}
+              key={country.name}
               className="flag"
               >
-                <span>{flag.flag}</span>
+                {country.flag}
               </div>
           )
         })
@@ -23,6 +24,11 @@ const Result = (props) => {
       <button onClick={handleButtonClick}>Clear Flags</button>
     </div>
   )
+}
+
+Result.propTypes = {
+  flags: PropTypes.array.isRequired,
+  handleButtonClick: PropTypes.func.isRequired
 }
 
 export default Result

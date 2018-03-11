@@ -25,7 +25,8 @@
 }
 
 .Options li.selected {
-  padding-right:0
+  padding-right:0;
+  font-size: 28px;
 }
 .Options li.selected:after {
   content: ' \2713 ';
@@ -37,4 +38,10 @@
 
 .hovered{
   background-color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .Options {
+    width: 90%;
+  }
 }
