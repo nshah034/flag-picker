@@ -1,5 +1,5 @@
 # flag-picker
-This is a Flag Picker Application.
+This is a Responsive Flag Picker Application which helps you learn flags around the world.
 
 ## Getting Started:  
 ```
