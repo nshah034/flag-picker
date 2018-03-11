@@ -1,5 +1,6 @@
 # flag-picker
 This is a Flag Picker
+
 Components:
 1) Options: Component for DropDown
 2) SearchBox: As per the requirements the dropdown Options for this searchBox are recieved are a function this.props.children(). On providing the value of searchBox the drop down is populated accordingly.
