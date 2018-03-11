@@ -1,0 +1,40 @@
+.Options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #eee;
+  border-top: 0;
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+  width: 30%;
+  background-color: #fff;
+}
+
+.Options li {
+  border: 1px solid #eee;
+  line-height: 45px;
+  padding-right: 26px;
+}
+.Options li:last-child{
+  border-bottom: none;
+}
+.Options li:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.Options li.selected {
+  padding-right:0
+}
+.Options li.selected:after {
+  content: ' \2713 ';
+  float: right;
+  color: green;
+  width: 16px;
+  padding-right: 10px;
+}
+
+.hovered{
+  background-color: grey;
+}

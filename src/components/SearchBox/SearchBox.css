@@ -1,0 +1,12 @@
+/* .SearchBox {
+  float: left;
+  margin: 20px;
+} */
+
+.SearchBox input{
+  font-size: 24px;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}

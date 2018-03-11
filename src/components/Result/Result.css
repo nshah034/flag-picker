@@ -1,0 +1,14 @@
+.result .flag {
+  display: inline-block;
+  margin: 5px;
+  font-size: 40px;
+}
+.result button {
+  width: 100px;
+  padding: 10px;
+  display: inline-block;
+  background-color: #999;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
